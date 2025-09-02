@@ -1,11 +1,11 @@
-# 피부암 병변 진행 시뮬레이션 (StyleGAN2 · e4e · SeFa)
+# 피부암 병변 진행 시뮬레이션
 
-본 저장소는 공개 피부 병변 데이터셋 **HAM10000**을 사용해 **StyleGAN2-ADA**를 학습하고, **custom e4e 인코더**로 실제 이미지를 **W+ latent space**에 투영한 뒤, **SeFa(Closed-form Semantic Factorization)** 로 추출한 의미 방향을 따라 latent를 조작해 **병변 진행(nevus → melanoma) 시각화를 시뮬레이션**한 연구 구현물입니다.  
+본 저장소는 공개 피부 병변 데이터셋 **HAM10000**을 사용해 **StyleGAN2-ADA**를 학습하고, **custom e4e 인코더**로 실제 이미지를 **W+ latent space**에 투영한 뒤, **SeFa(Closed-form Semantic Factorization)** 로 추출한 의미 방향을 따라 latent를 조작해 **병변 진행(nevus → melanoma) 시각화를 시뮬레이션**한 연구입니다.  
 
 ---
 
 ## 1. 연구 동기 (Motivation)
-- 피부암(특히 **melanoma**)은 전이 속도가 빠르고 치사율이 높습니다.  
+- 피부암(특히 **melanoma(mel, 흑생종)**)은 전이 속도가 빠르고 치사율이 높습니다.  
 - 정량적 **진행 추정/시뮬레이션**이 가능하다면 조기 판단과 교육, 데이터 증강에 유용합니다.  
 - GAN은 제한적 의료 데이터에서도 **고해상도 합성**에 강점을 보여 왔습니다.  
 - 본 연구는 **단일 이미지로부터 병변 진행을 시각적으로 추정·생성**할 수 있는 가능성을 탐구했습니다.  
