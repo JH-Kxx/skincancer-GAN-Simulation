@@ -82,8 +82,7 @@
 - 입력 해상도: 512×512  
 - FID 최종 31.96, e4e L2 = 0.0039, LPIPS는 α에 따라 증가  
 
-### 5.2 재현용 예시
-- OS: Ubuntu 20.04/22.04 (또는 WSL2)  
+### 5.2 재현용 예시  
 - Python 3.9  
 - PyTorch 1.13.1 + CUDA 11.7, torchvision 0.14.1  
 - numpy 1.24.4, pillow, scikit-image, tqdm  
